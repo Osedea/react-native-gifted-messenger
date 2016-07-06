@@ -224,6 +224,10 @@ class GiftedMessenger extends Component {
   }
 
   onKeyboardDidHide(e) {
+    if (Platform.OS === 'android') {
+      this.onKeyboardWillHide(e);
+    }
+
     // TODO test in android
     if (this.props.keyboardShouldPersistTaps === false) {
       if (this.isLastMessageVisible()) {
@@ -240,6 +244,10 @@ class GiftedMessenger extends Component {
   }
 
   onKeyboardDidShow(e) {
+    if (Platform.OS === 'android') {
+      this.onKeyboardWillHide(e);
+    }
+
     setTimeout(() => {
       this.scrollToBottom();
     }, (Platform.OS === 'android' ? 200 : 100));

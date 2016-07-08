@@ -225,7 +225,7 @@ class GiftedMessenger extends Component {
 
   onKeyboardDidHide(e) {
     if (Platform.OS === 'android') {
-      this.onKeyboardWillHide(e);
+      this.onKeyboardWillHide();
     }
 
     // TODO test in android
@@ -245,7 +245,7 @@ class GiftedMessenger extends Component {
 
   onKeyboardDidShow(e) {
     if (Platform.OS === 'android') {
-      this.onKeyboardWillHide(e);
+      this.onKeyboardWillShow(e);
     }
 
     setTimeout(() => {

@@ -92,13 +92,10 @@ class GiftedMessenger extends Component {
       },
       textInput: {
         alignSelf: 'center',
-        height: 30,
-        width: 100,
         backgroundColor: '#FFF',
         flex: 1,
         padding: 0,
         margin: 0,
-        fontSize: 15,
       },
       sendButton: {
         marginTop: 10,
@@ -306,8 +303,8 @@ class GiftedMessenger extends Component {
         });
     } else {
         this.setState({
-          textInputHeight: 35 + textInputHeight - 19,
-          textInputMarginTop: 19 - textInputHeight // 19 is the height of one line
+          textInputHeight: 35 + textInputHeight - 29,
+          textInputMarginTop: 29 - textInputHeight // 29 is the height of one line
         });
     }
 

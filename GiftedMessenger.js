@@ -596,6 +596,7 @@ class GiftedMessenger extends Component {
             placeholder={this.props.placeholder}
             multiline={true}
             placeholderTextColor={this.props.placeholderTextColor}
+            selectionColor={this.props.selectionColor}
             onChange={this.onChange}
             value={this.state.text}
             autoFocus={this.props.autoFocus}
@@ -698,6 +699,7 @@ GiftedMessenger.propTypes = {
   renderCustomText: React.PropTypes.func,
   renderCustomDate: React.PropTypes.func,
   scrollAnimated: React.PropTypes.bool,
+  selectionColor: React.PropTypes.string,
   sendButtonText: React.PropTypes.string,
   senderImage: React.PropTypes.object,
   senderName: React.PropTypes.string,

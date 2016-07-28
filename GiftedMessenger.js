@@ -303,8 +303,8 @@ class GiftedMessenger extends Component {
         });
     } else {
         this.setState({
-          textInputHeight: 35 + textInputHeight - 29,
-          textInputMarginTop: 29 - textInputHeight // 29 is the height of one line
+          textInputHeight: 35 + textInputHeight - 25,
+          textInputMarginTop: 25 - textInputHeight // 25 is the height of one line
         });
     }
 

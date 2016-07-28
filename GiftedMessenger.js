@@ -604,6 +604,7 @@ class GiftedMessenger extends Component {
             onSubmitEditing={this.props.submitOnReturn ? this.onSend : () => {}}
             enablesReturnKeyAutomatically={true}
             blurOnSubmit={this.props.blurOnSubmit}
+            ref={this.props.textInputRef}
           />
           <Button
             style={this.styles.sendButton}
@@ -705,6 +706,7 @@ GiftedMessenger.propTypes = {
   senderName: React.PropTypes.string,
   styles: React.PropTypes.object,
   submitOnReturn: React.PropTypes.bool,
+  textInputRef: React.PropTypes.func,
   typingMessage: React.PropTypes.string,
 };
 

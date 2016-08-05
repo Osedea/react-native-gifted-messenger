@@ -136,7 +136,7 @@ export default class Bubble extends React.Component {
           );
       } else {
             return (
-              <View style={[(this.realLength(this.props.text) > 40 ) ? {flex: 1} : {}]}>
+              <View style={[(this.realLength(this.props.text) > 35 ) ? {flex: 1} : {}]}>
                 <View style={[styles.bubble,
                   (this.props.position === 'left' ? styles.bubbleLeft : this.props.position === 'right' ? styles.bubbleRight : styles.bubbleCenter),
                   (this.props.status === 'ErrorButton' ? styles.bubbleError : null),
